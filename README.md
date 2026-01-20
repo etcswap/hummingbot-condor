@@ -2,6 +2,16 @@
 
 A Telegram bot for monitoring and trading with Hummingbot via the Backend API.
 
+## ETCswap Support
+
+This branch includes support for [ETCswap](https://etcswap.org), the leading DEX on Ethereum Classic:
+
+- **DEX Swaps**: Execute ETCswap trades via `/swap` command
+- **Liquidity Management**: Manage V3 positions via `/lp` command
+- **Wallet Balances**: Check ETC token balances via Gateway
+
+See [docs/etcswap/](docs/etcswap/) for setup instructions and trading guide.
+
 ## Features
 
 - **Portfolio Dashboard** - Comprehensive portfolio view with PNL tracking, 24h changes, and graphical analysis
@@ -16,8 +26,9 @@ A Telegram bot for monitoring and trading with Hummingbot via the Backend API.
 **Prerequisites:** Python 3.12+, Conda, Hummingbot Backend API running, Telegram Bot Token
 
 ```bash
-git clone https://github.com/hummingbot/condor.git
-cd condor
+git clone https://github.com/etcswap/hummingbot-condor.git
+cd hummingbot-condor
+git checkout etcswap
 
 # Option 1: Local Python
 make install     # Interactive setup + conda environment
